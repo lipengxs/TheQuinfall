@@ -3,24 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Quinfall - World Map Guide & Navigation System</title>
-        <meta name="description" content="Explore The Quinfall's world with our detailed map system. Learn about the mini-map, large map features, and navigation tools that will help you explore this vast MMORPG world.">
-        <meta name="keywords" content="the quinfall world map, quinfall navigation, mmorpg map system, quinfall game guide, mini-map features">
+        <title>The Quinfall - Gold Coins Guide & Currency System</title>
+        <meta name="description" content="Learn about The Quinfall's gold coins system. Discover how to earn, manage and use gold coins effectively in this comprehensive guide for the vast MMORPG world.">
+        <meta name="keywords" content="the quinfall gold coins, quinfall currency, mmorpg gold farming, quinfall game guide, gold coins guide">
         
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://thequinfall.com/guides/world">
-        <meta property="og:title" content="The Quinfall - World Map Guide & Navigation System">
-        <meta property="og:description" content="Explore The Quinfall's world with our detailed map system. Learn about the mini-map, large map features, and navigation tools that will help you explore this vast MMORPG world.">
+        <meta property="og:url" content="https://thequinfall.com/guides/gold-coins">
+        <meta property="og:title" content="The Quinfall - Gold Coins Guide & Currency System">
+        <meta property="og:description" content="Learn about The Quinfall's gold coins system. Discover how to earn, manage and use gold coins effectively in this comprehensive guide for the vast MMORPG world.">
         <meta property="og:image" content="https://thequinfall.com/static/logo.png">
         <meta property="og:site_name" content="The Quinfall">
         <meta property="og:locale" content="en_US">
         
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:url" content="https://thequinfall.com/guides/world">
-        <meta name="twitter:title" content="The Quinfall - World Map Guide & Navigation System">
-        <meta name="twitter:description" content="Explore The Quinfall's world with our detailed map system. Learn about the mini-map, large map features, and navigation tools that will help you explore this vast MMORPG world.">
+        <meta name="twitter:url" content="https://thequinfall.com/guides/gold-coins">
+        <meta name="twitter:title" content="The Quinfall - Gold Coins Guide & Currency System">
+        <meta name="twitter:description" content="Learn about The Quinfall's gold coins system. Discover how to earn, manage and use gold coins effectively in this comprehensive guide for the vast MMORPG world.">
         <meta name="twitter:image" content="https://thequinfall.com/static/logo.png">
         
         <!-- Favicon -->
@@ -28,7 +28,7 @@
         <link rel="apple-touch-icon" href="https://thequinfall.com/static/logo.png">
         
         <!-- Canonical -->
-        <link rel="canonical" href="https://thequinfall.com/guides/world">
+        <link rel="canonical" href="https://thequinfall.com/guides/gold-coins">
         
         <!-- Styles -->
         <link rel="stylesheet" href="../static/base.css?v=0.11">
@@ -53,60 +53,85 @@
                 padding: auto;
             }
 
-            .world-map-content {
+            .guide-content {
                 max-width: 1200px;
                 margin: 0 auto;
-                padding: 20px;
+                padding: 40px 20px;
             }
 
-            .map-section {
-                background: white;
-                border-radius: 8px;
-                padding: 30px;
-                margin-bottom: 30px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-
-            .map-section h2 {
+            .guide-content h1 {
                 color: #2c3e50;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 2.5em;
+            }
+
+            .guide-content section {
+                margin-bottom: 40px;
+                background: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+
+            .guide-content h2 {
+                color: #34495e;
                 margin-bottom: 20px;
-                font-size: 24px;
+                font-size: 1.8em;
             }
 
-            .map-section p {
-                color: #555;
-                line-height: 1.6;
-                margin-bottom: 15px;
-            }
-
-            .map-image-placeholder {
-                background: #f0f0f0;
-                border-radius: 8px;
-                height: 400px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 20px 0;
-                color: #666;
-                font-size: 18px;
-            }
-
-            .feature-list {
+            .uses-list, .tips-list {
                 list-style: none;
                 padding: 0;
             }
 
-            .feature-list li {
-                margin-bottom: 10px;
-                padding-left: 20px;
+            .uses-list li, .tips-list li {
+                margin-bottom: 15px;
+                padding-left: 25px;
                 position: relative;
             }
 
-            .feature-list li:before {
+            .uses-list li:before, .tips-list li:before {
                 content: "•";
+                color: #e67e22;
+                font-size: 1.5em;
                 position: absolute;
                 left: 0;
-                color: #4a90e2;
+            }
+
+            .method-cards {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                margin-top: 20px;
+            }
+
+            .method-card {
+                background: #f8f9fa;
+                padding: 20px;
+                border-radius: 8px;
+                border-left: 4px solid #e67e22;
+            }
+
+            .method-card h3 {
+                color: #e67e22;
+                margin-bottom: 10px;
+                font-size: 1.2em;
+            }
+
+            .method-card p {
+                color: #666;
+                line-height: 1.6;
+            }
+
+            @media (max-width: 768px) {
+                .method-cards {
+                    grid-template-columns: 1fr;
+                }
+                
+                .guide-content {
+                    padding: 20px 15px;
+                }
             }
           
         </style>
@@ -144,41 +169,62 @@
             </div>
         </header>
         <main>
-            <div class="world-map-content">
-                <div class="map-section">
-                    <h2>World Map System</h2>
-                    <p>Quinfall provides players with a detailed map and a convenient mini-map for those who wish to explore the vast world. Here are the key features of the map system.</p>
-                </div>
+            <div class="container">
+                <article class="guide-content">
+                    <h1>The Quinfall Gold Coins Guide</h1>
+                    
+                    <section class="introduction">
+                        <h2>About Gold Coins in The Quinfall</h2>
+                        <p>Gold Coins are the main currency in The Quinfall, essential for every player's journey. As you begin your adventure in this vast MMORPG world, understanding how to earn and utilize gold coins effectively will be crucial for your progress.</p>
+                    </section>
 
-                <div class="map-section">
-                    <h2>Mini-Map</h2>
-                    <ul class="feature-list">
-                        <li>The mini-map is located in one corner of the screen and displays your character, surroundings, and nearby important points.</li>
-                        <li>You can personalize mini-map features, zoom in and out, and track your character's location from the settings menu.</li>
-                        <li>The mini-map is a significant aid during short-distance journeys, completing quests, and being aware of nearby dangers.</li>
-                    </ul>
-                </div>
+                    <section class="uses">
+                        <h2>What Can You Do With Gold Coins?</h2>
+                        <ul class="uses-list">
+                            <li><strong>Equipment Purchase</strong>: Acquire powerful weapons and armor to enhance your combat capabilities</li>
+                            <li><strong>Character Upgrades</strong>: Invest in character development and skill improvements</li>
+                            <li><strong>Trading System</strong>: Participate in the dynamic player-driven economy</li>
+                            <li><strong>Building & Construction</strong>: Fund your castle and island development projects</li>
+                            <li><strong>Mount & Pet Acquisition</strong>: Purchase companions and transportation</li>
+                        </ul>
+                    </section>
 
-                <div class="map-section">
-                    <h2>Large Map</h2>
-                    <div class="map-image-placeholder">
-                        <img src="https://thequinfall.com/static/images/map1.png" alt="The Quinfall World Map">
-                    </div>
-                    <ul class="feature-list">
-                        <li>Access the large map by pressing the "M" key. This map offers a broad perspective and covers a larger area.</li>
-                        <li>On the large map, you can obtain a detailed view of symbols, icons, and important locations. This is valuable for long-distance journeys and general exploration.</li>
-                        <li>Custom icons indicate quests, trade points, dungeons, and other crucial features, assisting players in reaching their objectives.</li>
-                    </ul>
-                </div>
+                    <section class="farming-methods">
+                        <h2>How to Earn Gold Coins</h2>
+                        <div class="method-cards">
+                            <div class="method-card">
+                                <h3>Main Quest Completion</h3>
+                                <p>Progress through the main storyline to earn substantial gold rewards while advancing your character's journey.</p>
+                            </div>
+                            
+                            <div class="method-card">
+                                <h3>Combat & Enemy Defeats</h3>
+                                <p>Engage in combat with enemies throughout the world to collect gold drops and valuable loot.</p>
+                            </div>
+                            
+                            <div class="method-card">
+                                <h3>Treasure Hunting</h3>
+                                <p>Explore the vast world to discover treasure chests and containers that may contain gold coins and valuable items.</p>
+                            </div>
+                            
+                            <div class="method-card">
+                                <h3>Item Trading</h3>
+                                <p>Sell unused items and equipment to merchants or other players through the trading system.</p>
+                            </div>
+                        </div>
+                    </section>
 
-                <div class="map-section">
-                    <h2>Map Settings</h2>
-                    <ul class="feature-list">
-                        <li>Map settings allow players to customize their map view. Adjusting icon size, visibility, and the overall detail level of the map is possible.</li>
-                        <li>While navigating the map, you can easily identify nearby resources, biomes, and significant locations.</li>
-                    </ul>
-                    <p>Quinfall's map system is designed to enable players to explore the world and navigate effectively. While the mini-map guides players in daily activities, the large map helps them better understand and explore the gaming world together.</p>
-                </div>
+                    <section class="tips">
+                        <h2>Gold Management Tips</h2>
+                        <ul class="tips-list">
+                            <li>Prioritize essential purchases that directly benefit your character's progression</li>
+                            <li>Keep track of market prices to make informed trading decisions</li>
+                            <li>Balance between saving for major purchases and maintaining necessary equipment upgrades</li>
+                            <li>Participate in community events and activities that offer gold rewards</li>
+                            <li>Consider joining a guild to access additional economic opportunities</li>
+                        </ul>
+                    </section>
+                </article>
             </div>
         </main>
         
