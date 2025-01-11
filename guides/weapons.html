@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Quinfall - Classes and Weapons Guide</title>
+        <meta name="description" content="Explore The Quinfall's comprehensive guide to classes and weapons. Learn about Dual Axe, Dagger, War Hammer, Staff, Life Staff, Crossbow, Long Sword, Spear, and Bow classes, their unique abilities and subclasses.">
+        <meta name="keywords" content="the quinfall weapons, quinfall classes, mmorpg weapons, quinfall combat guide, dual axe, dagger, war hammer, staff, life staff, crossbow, long sword, spear, bow">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://thequinfall.com/guides/weapons">
+        <meta property="og:title" content="The Quinfall - Classes and Weapons Guide">
+        <meta property="og:description" content="Master the art of combat with our comprehensive guide to classes and weapons in The Quinfall. Discover unique combat styles and abilities for each class.">
+        <meta property="og:image" content="https://thequinfall.com/static/logo.png">
+        <meta property="og:site_name" content="The Quinfall">
+        <meta property="og:locale" content="en_US">
+        
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="https://thequinfall.com/guides/weapons">
+        <meta name="twitter:title" content="The Quinfall - Classes and Weapons Guide">
+        <meta name="twitter:description" content="Master the art of combat with our comprehensive guide to classes and weapons in The Quinfall. Discover unique combat styles and abilities for each class.">
+        <meta name="twitter:image" content="https://thequinfall.com/static/logo.png">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico" sizes="32x32">
+        <link rel="apple-touch-icon" href="static/logo.png">
+        
+        <!-- Canonical -->
+        <link rel="canonical" href="https://thequinfall.com/guides/weapons">
+        
+        <!-- Styles -->
+        <link rel="stylesheet" href="../static/base.css?v=0.11">
+        
+        <!-- Microsoft Validation -->
+        <meta name="msvalidate.01" content="B362957FC36C5EDDD6079B6D78330424">
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q621KQNVG8"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Q621KQNVG8');
+        </script>
+        <style>
+           
+            main {
+                background-color: #f5f5f0;
+                min-height: 100vh;
+                padding-top: 80px;
+            }
+
+            .guide-hero {
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), no-repeat center center;
+                background-size: cover;
+                padding: 60px 0;
+                text-align: center;
+                color: #fff;
+                margin-bottom: 40px;
+            }
+
+            .guide-hero h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .guide-hero p {
+                font-size: 1.1rem;
+                max-width: 600px;
+                margin: 0 auto;
+                opacity: 0.9;
+            }
+
+            .weapons-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+                padding: 20px;
+                margin-bottom: 40px;
+            }
+
+            .weapon-card {
+                background: #fff;
+                border-radius: 15px;
+                padding: 25px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            .weapon-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            }
+
+            .weapon-card h2 {
+                color: #2c2c2c;
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #e62429;
+                font-family: 'Cinzel', serif;
+            }
+
+            .weapon-description {
+                margin-bottom: 20px;
+            }
+
+            .weapon-description p {
+                color: #666;
+                line-height: 1.6;
+                font-size: 1rem;
+            }
+
+            .subclasses {
+                display: grid;
+                gap: 20px;
+            }
+
+            .subclass-item {
+                background: rgba(230, 36, 41, 0.05);
+                padding: 15px;
+                border-radius: 10px;
+                border: 1px solid rgba(230, 36, 41, 0.1);
+            }
+
+            .subclass-item h3 {
+                color: #e62429;
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+
+            .subclass-item p {
+                color: #666;
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+
+            @media (max-width: 768px) {
+                .guide-hero {
+                    padding: 40px 0;
+                }
+
+                .guide-hero h1 {
+                    font-size: 2rem;
+                }
+
+                .weapons-grid {
+                    grid-template-columns: 1fr;
+                    padding: 15px;
+                }
+
+                .weapon-card {
+                    padding: 20px;
+                }
+            }
+          
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <img src="https://thequinfall.com/static/logo.png" alt="The Quinfall Logo">
+                    </div>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/character">Character</a></li>
+                        <li><a href="/monsters">Monsters</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Guides</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/guides/weapons">Weapons</a></li>
+                                <li><a href="/guides/world">World Map</a></li>
+                                <li><a href="/guides/video-guides">Video Guides</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/download" class="download-btn">Download</a></li>
+                    </ul>
+                    <div class="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="guide-hero">
+                <div class="container">
+                    <h1>Classes and Weapons Guide</h1>
+                    <p>Master the art of combat with our comprehensive guide to classes and weapons in The Quinfall</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="weapons-grid">
+                    <!-- Dual Axe -->
+                    <div class="weapon-card">
+                        <h2>Dual Axe</h2>
+                        <div class="weapon-description">
+                            <p>Warriors who expertly wield two great axes, known for delivering powerful, crushing physical attacks that can overwhelm enemies with devastating blows.</p>
+                        </div>
+                        <div class="subclasses">
+                            <div class="subclass-item">
+                                <h3>Blood Master</h3>
+                                <p>Masters of inflicting wounds and bleeding effects, these warriors weaken enemies over time, causing them to bleed to death.</p>
+                            </div>
+                            <div class="subclass-item">
+                                <h3>Stormblade</h3>
+                                <p>Swift and devastating warriors who charge into battle, delivering powerful and rapid attacks to their enemies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dagger -->
+                    <div class="weapon-card">
+                        <h2>Dagger</h2>
+                        <div class="weapon-description">
+                            <p>Swift warriors who skillfully wield fast and sharp daggers, known for delivering quick and devastating physical attacks.</p>
+                        </div>
+                        <div class="subclasses">
+                            <div class="subclass-item">
+                                <h3>Deathblade</h3>
+                                <p>Masters of swift strikes, delivering fast and sustained damage with superior speed advantage.</p>
+                            </div>
+                            <div class="subclass-item">
+                                <h3>Shadow Stalker</h3>
+                                <p>Stealthy assassins who use poison and invisibility to strike from the shadows.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- War Hammer -->
+                    <div class="weapon-card">
+                        <h2>War Hammer</h2>
+                        <div class="weapon-description">
+                            <p>Powerful warriors who wield massive war hammers, combining strength with tactical support abilities.</p>
+                        </div>
+                        <div class="subclasses">
+                            <div class="subclass-item">
+                                <h3>Strengthener</h3>
+                                <p>Support specialists who enhance team performance, defense, and offensive capabilities.</p>
+                            </div>
+                            <div class="subclass-item">
+                                <h3>Slow Devastator</h3>
+                                <p>Masters of powerful, slower strikes that deal massive damage to enemies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Staff -->
+                    <div class="weapon-card">
+                        <h2>Staff</h2>
+                        <div class="weapon-description">
+                            <p>Magical warriors who wield mystical staffs, capable of casting various spells for both offense and support.</p>
+                        </div>
+                        <div class="subclasses">
+                            <div class="subclass-item">
+                                <h3>Frost Mage</h3>
+                                <p>Masters of ice magic who slow and freeze enemies with powerful frost spells.</p>
+                            </div>
+                            <div class="subclass-item">
+                                <h3>Fire Mage</h3>
+                                <p>Specialists in devastating area-of-effect fire damage and magical attacks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Life Staff -->
+                    <div class="weapon-card">
+                        <h2>Life Staff</h2>
+                        <div class="weapon-description">
+                            <p>Healers who channel life energy through their staffs, providing crucial support and healing to allies.</p>
+                        </div>
+                        <div class="subclasses">
+                            <div class="subclass-item">
+                                <h3>Healer</h3>
+                                <p>Dedicated healers who maintain and revitalize the team's health during battle.</p>
+                            </div>
+                            <div class="subclass-item">
+                                <h3>Magic Warden</h3>
+                                <p>Hybrid support who combine magical attacks with defensive buffs and enemy debuffs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Crossbow -->
+                    <div class="weapon-card">
+                        <h2>Crossbow</h2>
+                        <div class="weapon-description">
+                            <p>Ranged specialists who excel at dealing precise damage from a distance with their crossbows.</p>
+                        </div>
+                        <div class="subclasses">
+                            <div class="subclass-item">
+                                <h3>Sharpshooter</h3>
+                                <p>Expert marksmen who specialize in high-damage precision shots from long range.</p>
+                            </div>
+                            <div class="subclass-item">
+                                <h3>Assault Master</h3>
+                                <p>Rapid-fire specialists who excel at dealing quick successive damage to enemies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Long Sword -->
+                    <div class="weapon-card">
+                        <h2>Long Sword</h2>
+                        <div class="weapon-description">
+                            <p>Warriors who master the art of wielding large and heavy longswords with devastating effect.</p>
+                        </div>
+                        <div class="subclasses">
+                            <div class="subclass-item">
+                                <h3>Strongsword</h3>
+                                <p>Two-handed sword masters who combine skill and strength in powerful attacks.</p>
+                            </div>
+                            <div class="subclass-item">
+                                <h3>Devastator</h3>
+                                <p>Specialists in stunning and devastating attacks, particularly effective against vulnerable targets.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spear -->
+                    <div class="weapon-card">
+                        <h2>Spear</h2>
+                        <div class="weapon-description">
+                            <p>Masters of reach and precision who excel at controlling the battlefield with their spears.</p>
+                        </div>
+                        <div class="subclasses">
+                            <div class="subclass-item">
+                                <h3>Lancer</h3>
+                                <p>Aggressive warriors who use piercing attacks and lead the charge in battle.</p>
+                            </div>
+                            <div class="subclass-item">
+                                <h3>Valkyrie</h3>
+                                <p>Versatile fighters who combine offensive capabilities with battlefield control.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bow -->
+                    <div class="weapon-card">
+                        <h2>Bow</h2>
+                        <div class="weapon-description">
+                            <p>Agile archers who form bonds with nature and excel at precise ranged combat.</p>
+                        </div>
+                        <div class="subclasses">
+                            <div class="subclass-item">
+                                <h3>Hunter</h3>
+                                <p>Nature-attuned warriors who combine beast companionship with stealthy combat.</p>
+                            </div>
+                            <div class="subclass-item">
+                                <h3>Critical Archer</h3>
+                                <p>Precision specialists who excel at dealing high damage through calculated shots.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="https://thequinfall.com/static/logo.png" alt="The Quinfall Logo">
+                        <div class="social-links">
+                            <a href="https://discord.gg/thequinfall" target="_blank" aria-label="Discord">
+                                <svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h3>Game</h3>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/character">Character</a></li>
+                                <li><a href="/monsters">Monsters</a></li>
+                                <li><a href="/news">News</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Guides</h3>
+                            <ul>
+                                <li><a href="/guides/weapons">Weapons</a></li>
+                                <li><a href="/guides/world">World Map</a></li>
+                                <li><a href="/guides/video-guides">Video Guides</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Community</h3>
+                            <ul>
+                                <li><a href="/download">Download</a></li>
+                                <li><a href="https://discord.gg/thequinfall" target="_blank">Discord</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Legal</h3>
+                            <ul>
+                                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                                <li><a href="/terms-of-service">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2024 The Quinfall. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

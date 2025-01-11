@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main Navigation URLs -->
+    <url>
+        <loc>https://thequinfall.com/</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://thequinfall.com/character</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://thequinfall.com/monsters</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://thequinfall.com/news</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://thequinfall.com/download</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Guide Section URLs -->
+    <url>
+        <loc>https://thequinfall.com/guides/weapons</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://thequinfall.com/guides/world</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://thequinfall.com/guides/video-guides</loc>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Legal Pages -->
+    <url>
+        <loc>https://thequinfall.com/privacy-policy</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://thequinfall.com/terms-of-service</loc>
+        <priority>0.5</priority>
+    </url>
+</urlset> 

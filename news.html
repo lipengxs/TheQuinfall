@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Quinfall News - Latest Updates and Announcements</title>
+        <meta name="description" content="Stay up to date with the latest The Quinfall news, updates, announcements, and community events. Get the latest information about game updates, events, and more.">
+        <meta name="keywords" content="the quinfall news, quinfall updates, quinfall announcements, mmorpg news, game updates">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://thequinfall.com/news">
+        <meta property="og:title" content="The Quinfall News - Latest Updates and Announcements">
+        <meta property="og:description" content="Stay up to date with the latest The Quinfall news, updates, announcements, and community events. Get the latest information about game updates, events, and more.">
+        <meta property="og:image" content="https://thequinfall.com/static/logo.png">
+        <meta property="og:site_name" content="The Quinfall">
+        <meta property="og:locale" content="en_US">
+        
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="https://thequinfall.com/news">
+        <meta name="twitter:title" content="The Quinfall News - Latest Updates and Announcements">
+        <meta name="twitter:description" content="Stay up to date with the latest The Quinfall news, updates, announcements, and community events. Get the latest information about game updates, events, and more.">
+        <meta name="twitter:image" content="https://thequinfall.com/static/logo.png">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico" sizes="32x32">
+        <link rel="apple-touch-icon" href="static/logo.png">
+        
+        <!-- Canonical -->
+        <link rel="canonical" href="https://thequinfall.com/news">
+        
+        <!-- Styles -->
+        <link rel="stylesheet" href="static/base.css?v=0.6">
+        
+        <!-- Microsoft Validation -->
+        <meta name="msvalidate.01" content="B362957FC36C5EDDD6079B6D78330424">
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q621KQNVG8"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Q621KQNVG8');
+        </script>
+        <style>
+            .page-news-area {
+                padding: 20px 0;
+            }
+            
+            .page-news-area-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .page-news-area-list li {
+                margin-bottom: 20px;
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 8px;
+                overflow: hidden;
+                transition: all 0.3s ease;
+            }
+            
+            .page-news-area-list li:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            }
+            
+            .page-news-area-list li a {
+                display: flex;
+                text-decoration: none;
+                color: #333;
+            }
+            
+            .img-box {
+                width: 200px;
+                height: 120px;
+                margin: 0;
+                overflow: hidden;
+            }
+            
+            .img-box img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            .news-box-content {
+                padding: 15px;
+                flex: 1;
+            }
+            
+            .title {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .type-notices {
+                color: #c17900;
+                font-size: 0.8em;
+                text-transform: uppercase;
+                font-style: normal;
+                font-weight: 600;
+            }
+            
+            .title span {
+                color: #333;
+                font-weight: 500;
+            }
+            
+            .title .desc {
+                font-size: 0.8em;
+                color: #666;
+            }
+            
+            .title .date {
+                font-size: 0.8em;
+                color: #555;
+            }
+            
+            .news-box-brace {
+                height: 2px;
+                background: rgba(0, 0, 0, 0.1);
+                margin: 20px 0;
+            }
+
+            @media (max-width: 768px) {
+                .page-news-area-list li a {
+                    flex-direction: column;
+                }
+                
+                .img-box {
+                    width: 100%;
+                    height: 180px;
+                }
+            }
+
+            /* Add new hero section styles */
+            .news-hero {
+                position: relative;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+                padding: 40px 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .news-hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url('static/hero-bg.jpg') center/cover no-repeat;
+                opacity: 0.2;
+                z-index: -1;
+            }
+
+            .news-hero h1 {
+                font-size: 2.5rem;
+                color: #fff;
+                margin: 0 0 10px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .news-hero p {
+                color: #aaa;
+                font-size: 1.1rem;
+                max-width: 600px;
+                margin: 0 auto;
+                line-height: 1.6;
+            }
+
+            @media (max-width: 768px) {
+                .news-hero {
+                    padding: 30px 0;
+                }
+                
+                .news-hero h1 {
+                    font-size: 2rem;
+                }
+                
+                .news-hero p {
+                    font-size: 1rem;
+                    padding: 0 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <img src="static/logo.png" alt="The Quinfall Logo">
+                    </div>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/character">Character</a></li>
+                        <li><a href="/monsters">Monsters</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Guides</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/guides/weapons">Weapons</a></li>
+                                <li><a href="/guides/world">World Map</a></li>
+                                <li><a href="/guides/video-guides">Video Guides</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/download" class="download-btn">Download</a></li>
+                    </ul>
+                    <div class="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="news-hero">
+                <div class="container">
+                    <h1>Latest News</h1>
+                    <p>Stay up to date with the latest news and announcements about The Quinfall</p>
+                </div>
+            </section>
+
+            <section class="news">
+                <div class="container">
+                    <div class="page-news-area" theme-style="lines">
+                        <ul class="page-news-area-list">
+                            <li>
+                                <a href="https://www.quinfall.com/news/notices?content&id=MzA=&slug=YXVndXN0LWRldmVsb3BtZW50LW5vdGVz" target="_blank" rel="noopener noreferrer">
+                                    <p class="img-box">
+                                        <img src="static/images/news1.png" alt="August Development Notes" onerror="this.src='static/news-no-img.jpg'">
+                                    </p>
+                                    <div class="news-box-content">
+                                        <strong class="title d-flex flex-column justify-content-start align-items-start">
+                                            <em class="type-notices">Notices</em>
+                                            <span title="August Development Notes">August Development Notes</span>
+                                            <span class="desc">Last edit: 09.09.2024 - 13:58:05</span>
+                                            <span class="date" title="09 September 2024 - Monday">09.09.24</span>
+                                        </strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <div class="news-box-brace"></div>
+
+                            <li>
+                                <a href="https://www.quinfall.com/news/notices?content&id=Mjk=&slug=Mm5kLWNsb3NlZC1iZXRhLXVwZGF0ZXM=" target="_blank" rel="noopener noreferrer">
+                                    <p class="img-box">
+                                        <img src="static/images/news1.png" alt="2nd Closed Beta Updates" onerror="this.src='static/news-no-img.jpg'">
+                                    </p>
+                                    <div class="news-box-content">
+                                        <strong class="title d-flex flex-column justify-content-start align-items-start">
+                                            <em class="type-notices">Notices</em>
+                                            <span title="2nd Closed Beta Updates">2nd Closed Beta Updates</span>
+                                            <span class="date" title="13 August 2024 - Tuesday">13.08.24</span>
+                                        </strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <div class="news-box-brace"></div>
+
+                            <li>
+                                <a href="https://www.quinfall.com/news/notices?content&id=Mjg=&slug=dGhhbmsteW91LWZvci1qb2luaW5nLXRoZS0ybmQtY2xvc2Vk" target="_blank" rel="noopener noreferrer">
+                                    <p class="img-box">
+                                        <img src="https://www.quinfall.com/quinfall/assets/img/website-images/news-images/notices/vghhbmsgww91igzvcibkb2luaw5nihrozsaybmqgq2xvc2vk.png" alt="Thank You for Joining the 2nd Closed" onerror="this.src='static/news-no-img.jpg'">
+                                    </p>
+                                    <div class="news-box-content">
+                                        <strong class="title d-flex flex-column justify-content-start align-items-start">
+                                            <em class="type-notices">Notices</em>
+                                            <span title="Thank You for Joining the 2nd Closed">Thank You for Joining the 2nd Closed</span>
+                                            <span class="desc">Last edit: 10.08.2024 - 20:50:13</span>
+                                            <span class="date" title="10 August 2024 - Saturday">10.08.24</span>
+                                        </strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <div class="news-box-brace"></div>
+
+                            <li>
+                                <a href="https://www.quinfall.com/news/notices?content&id=MjY=&slug=ZnJlcXVlbnRseS1hc2tlZC1xdWVzdGlvbnMtcXVpbmZhbGwtMm5kLWNsb3NlZC1iZXRh" target="_blank" rel="noopener noreferrer">
+                                    <p class="img-box">
+                                        <img src="static/images/news1.png" alt="Frequently Asked Questions" onerror="this.src='static/news-no-img.jpg'">
+                                    </p>
+                                    <div class="news-box-content">
+                                        <strong class="title d-flex flex-column justify-content-start align-items-start">
+                                            <em class="type-notices">Notices</em>
+                                            <span title="Frequently Asked Questions: Quinfall 2nd Closed Beta">Frequently Asked Questions: Quinfall 2nd Closed Beta</span>
+                                            <span class="desc">Last edit: 12.07.2024 - 10:50:19</span>
+                                            <span class="date" title="16 June 2024 - Sunday">16.06.24</span>
+                                        </strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <div class="news-box-brace"></div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="static/logo.png" alt="The Quinfall Logo">
+                        <div class="social-links">
+                            <a href="https://discord.gg/thequinfall" target="_blank" aria-label="Discord">
+                                <svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h3>Game</h3>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/character">Character</a></li>
+                                <li><a href="/monsters">Monsters</a></li>
+                                <li><a href="/news">News</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Guides</h3>
+                            <ul>
+                                <li><a href="/guides/weapons">Weapons</a></li>
+                                <li><a href="/guides/world">World Map</a></li>
+                                <li><a href="/guides/video-guides">Video Guides</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Community</h3>
+                            <ul>
+                                <li><a href="/download">Download</a></li>
+                                <li><a href="https://discord.gg/thequinfall" target="_blank">Discord</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Legal</h3>
+                            <ul>
+                                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                                <li><a href="/terms-of-service">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2024 The Quinfall. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html> 
