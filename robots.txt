@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Disallow system files
+Disallow: /cgi-bin/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /.htaccess
+
+# Sitemap location
+Sitemap: https://thequinfall.com/sitemap.xml
+
+# Crawl-delay to prevent server overload
+Crawl-delay: 10 
