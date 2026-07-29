@@ -45,4 +45,16 @@
         <loc>https://thequinfall.com/terms-of-service</loc>
         <priority>0.5</priority>
     </url>
+    <url>
+        <loc>https://thequinfall.com/worth-playing-2026</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://thequinfall.com/server-population-guide</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset> 
