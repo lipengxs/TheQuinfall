@@ -57,4 +57,22 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://thequinfall.com/best-class-2026</loc>
+        <lastmod>2026-07-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://thequinfall.com/p2w-guide</loc>
+        <lastmod>2026-07-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://thequinfall.com/server-status-guide</loc>
+        <lastmod>2026-07-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
 </urlset> 
