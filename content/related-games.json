@@ -1,0 +1,37 @@
+{
+  "game": "The Quinfall",
+  "origin": "https://thequinfall.com",
+  "updated": "2026-10-12",
+  "title": "Games to Explore After The Quinfall",
+  "description": "Compare selected games for The Quinfall readers, with clear reasons to explore each setting and links to independent guides.",
+  "intro": "The Quinfall invites comparisons about the kind of online life you want. These alternatives change the environment, the emphasis on social activities, or the role of a personal adventure.",
+  "disclosure": "These independent guide websites are maintained by the same operator. Recommendations are editorial suggestions, not official partnerships or endorsements. Official game sources are listed separately.",
+  "entries": [
+    {
+      "name": "Dune: Awakening",
+      "url": "https://dune-awakening.com/",
+      "category": "Survival & Exploration",
+      "tags": "Desert survival · shared world",
+      "reason": "Explore survival preparation and the shared-world context of Arrakis. Environmental constraints provide a useful comparison when choosing another game about planning a journey.",
+      "difference": "Dune: Awakening centres on survival and social play on the desert world of Arrakis; The Quinfall centres on a shared fantasy world with MMORPG progression. Similar interests do not imply identical mechanics or multiplayer support."
+    },
+    {
+      "name": "Loftia",
+      "url": "https://loftiahq.com/",
+      "category": "Farming & Life Sims",
+      "tags": "Social world · housing · farming",
+      "reason": "Explore personal housing, shared neighborhoods and cooperative activities in an online social setting. Start with the housing and multiplayer guides to understand the shape of that community.",
+      "difference": "Loftia centres on an online social world with shared projects and personal living spaces; The Quinfall centres on a shared fantasy world with MMORPG progression. Similar interests do not imply identical mechanics or multiplayer support."
+    },
+    {
+      "name": "Crimson Desert",
+      "url": "https://crimson-desert.com/",
+      "category": "Action, Fantasy & Strategy",
+      "tags": "Open-world action · exploration",
+      "reason": "Explore an action-adventure setting and its wider world. Its guides offer another reading route for players drawn to combat, travel and a fantasy landscape.",
+      "difference": "Crimson Desert centres on open-world action and exploration in Pywel; The Quinfall centres on a shared fantasy world with MMORPG progression. Similar interests do not imply identical mechanics or multiplayer support."
+    }
+  ],
+  "articles": [],
+  "guideRecommendations": []
+}

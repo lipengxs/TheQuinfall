@@ -1,0 +1,1 @@
+document.addEventListener('click',function(event){var link=event.target instanceof Element?event.target.closest('a[data-guide-domain]'):null;if(link&&typeof window.gtag==='function')window.gtag('event','game_guide_click',{source_page:location.pathname,target_domain:link.dataset.guideDomain,placement:'directory',transport_type:'beacon'});});

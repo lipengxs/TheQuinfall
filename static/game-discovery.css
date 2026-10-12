@@ -1,0 +1,20 @@
+/* Independent game discovery: scoped to avoid changing existing page layouts. */
+.gd-page,.gd-home{max-width:1120px;margin:0 auto;padding:clamp(24px,5vw,64px) 24px;line-height:1.7;color:inherit}
+.gd-page h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.15;margin:16px 0 24px;overflow-wrap:anywhere}
+.gd-page h2,.gd-section h2{font-size:clamp(1.4rem,3vw,2rem);line-height:1.3;margin:0 0 18px}
+.gd-page h3,.gd-section h3{font-size:1.2rem;line-height:1.35;margin:10px 0 14px}
+.gd-page p,.gd-section p,.gd-home p{margin:12px 0;max-width:78ch}
+.gd-intro{max-width:78ch;margin-bottom:32px}.gd-disclosure{border-left:3px solid currentColor;padding:8px 16px;font-size:.94rem}
+.gd-category{margin:40px 0}.gd-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,285px),1fr));gap:20px}
+.gd-card{border:1px solid var(--line,var(--border-color,#89918d));border-radius:var(--radius,12px);padding:24px;min-width:0;display:flex;flex-direction:column}
+.gd-card a{margin-top:auto;align-self:flex-start;padding-top:16px}.gd-label{font-size:.8rem;font-weight:700;letter-spacing:.04em}.gd-difference{font-size:.94rem}
+.gd-page a,.gd-section a,.gd-home a,.gd-footer a{text-decoration:underline;text-underline-offset:4px;color:inherit;overflow-wrap:anywhere}
+.gd-page a:hover,.gd-section a:hover,.gd-home a:hover,.gd-footer a:hover{text-decoration-thickness:2px}
+.gd-page a:focus-visible,.gd-section a:focus-visible,.gd-home a:focus-visible,.gd-footer a:focus-visible{outline:3px solid currentColor;outline-offset:5px}
+.gd-section{margin:40px 0;padding:24px 0;border-top:1px solid var(--line,var(--border-color,#89918d));line-height:1.7}
+.gd-footer{padding:16px 24px;text-align:center;clear:both}.gd-home{border-top:1px solid var(--line,var(--border-color,#89918d))}
+.gd-table-wrap{overflow-x:auto;margin:24px 0}.gd-page table{width:100%;border-collapse:collapse;min-width:500px}.gd-page th,.gd-page td{text-align:left;vertical-align:top;border:1px solid var(--line,var(--border-color,#89918d));padding:14px;white-space:normal}
+.gd-article{max-width:900px}.gd-article section{margin:32px 0}.gd-page ul{padding-left:24px}.gd-breadcrumb{font-size:.92rem;margin-bottom:24px}
+@media(max-width:600px){.gd-card{padding:20px}.gd-page,.gd-home{padding:32px 20px}.gd-grid{grid-template-columns:1fr}}
+
+.gd-page>header{position:static;inset:auto;background:none;color:inherit;box-shadow:none;backdrop-filter:none;border:0;width:auto;height:auto;padding:0;z-index:auto}.gd-page section{height:auto;min-height:0}.gd-page .gd-card{background:transparent;color:inherit}.gd-footer{grid-column:1/-1}
